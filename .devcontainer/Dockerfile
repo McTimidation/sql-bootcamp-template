@@ -5,7 +5,7 @@ FROM python:3.9-slim
 ENV PYTHONUNBUFFERED 1
 
 # Install any needed packages specified in requirements.txt
-RUN pip install --no-cache-dir psycopg3-binary
+RUN pip install --no-cache-dir psycopg2-binary
 
 
 
