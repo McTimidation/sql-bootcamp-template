@@ -6,12 +6,18 @@
 	"service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 	"postCreateCommand": "pip install --user -r requirements.txt",
-	"setttings": {
-		"terminated.integrated.shell.linux": "/bin/bash"
-	},
-	"extensions": [
-		"ms-python.python"
-	]
+	"customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            },
+            "extensions": [
+                "ms-python.python",
+                "mtxr.sqltools",
+                "mtxr.sqltools-driver-pg"
+            ]
+        }
+    }
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
